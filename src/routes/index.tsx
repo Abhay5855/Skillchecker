@@ -1,10 +1,11 @@
 import React from 'react';
+import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import App from '../App';
+const CreateRoom = lazy(() => import('../pages/CreateRoom'));
 
 export const router = createBrowserRouter([
 	{
-		path: '/',
-		element: <App />,
+		path: '/create-room',
+		element: <CreateRoom />,
 	},
 ]);
