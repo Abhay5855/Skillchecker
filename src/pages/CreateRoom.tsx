@@ -1,10 +1,10 @@
 import React from 'react';
-import BasicInfo from '../features/basic-info';
+import CreateRoomContainer from '../features/basic-info/CreateRoomContainer';
 
 const CreateRoom = () => {
 	return (
 		<div>
-			<BasicInfo />
+			<CreateRoomContainer />
 		</div>
 	);
 };
