@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { Question } from '../../types';
 
 const QuestionForm: FC = () => {
 	return (
