@@ -1,10 +1,16 @@
 import React from 'react';
+import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import App from '../App';
+import LandingPage from '../pages/LandingPage';
+const CreateRoom = lazy(() => import('../pages/CreateRoom'));
 
 export const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <App />,
+		element: <LandingPage />,
+	},
+	{
+		path: '/create-room',
+		element: <CreateRoom />,
 	},
 ]);
